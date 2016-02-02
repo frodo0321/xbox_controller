@@ -91,13 +91,13 @@ class XBoxController():
              
 
     def read_raw(self):
-        self.update_state()
+        self.update()
         return self.state
 
 if __name__=='__main__':
     c=XBoxController()
     while(True):
-        c.update_state()
+        c.update()
         print c.LT
         print c.RAnalogX
 
